@@ -32,3 +32,10 @@ logging:
   level:
     com.example.asyncrunner: DEBUG
     org.hibernate.SQL: DEBUG
+
+app:
+  polling:
+    batch-size: 10
+    interval-ms: 2000  # Проверять каждые 2 секунды
+    max-attempts: 3
+    retry-delay-seconds: 5
